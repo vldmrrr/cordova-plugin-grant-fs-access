@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-grant-fs-access"
+      version="1.0">
+	<name>Request FS access from user</name>
+	<description>Allows user grant to an application file system access</description>
+    <license>Apache 2.0</license>
+
+    <keywords>directory,access,permission</keywords>
+
+    <js-module src="www/GrantFsAccess.js" name="GrantFsAccess">
+       <clobbers target="GrantFsAccess" />
+    </js-module>
+    
+    <platform name="android">
+    	<config-file target="config.xml" parent="/*">
+    		<feature name="GrantFsAccess">
+    			<param name="android-package" value="cordova.GrantFsAccess.GrantFsAccess"/>
+    			<param name="onload" value="true" />
+    		</feature>
+    	</config-file>
+    	        
+        <source-file src="src/android/GrantFsAccess.java" target-dir="src/cordova/GrantFsAccess" />
+    </platform>
+            
+    
+</plugin>

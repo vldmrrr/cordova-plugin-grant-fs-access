@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-grant-fs-access",
+  "version": "1.0.0",
+  "description": "Allows user grant to application file system access",
+  "cordova": {
+    "id": "cordova-plugin-grant-fs-access",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "vldmrrr@gmail.com",
+  "license": "Apache-2.0"
+}
